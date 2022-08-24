@@ -83,5 +83,36 @@ public class Rutif {
             return digito;
         }
     }
-
+    while (choice != 0) {
+    /* Ask for player's choice */
+    while(true) {
+        try
+        {
+            BufferedReader menuInput = new BufferedReader(new InputStreamReader(System.in));
+            System.out.println();
+            System.out.println("Please choose between the following options:'");
+            System.out.println(" (1) Make new animal");
+            System.out.println(" (2) Feed Animals");
+            System.out.println(" (3) Count animals");
+            System.out.println(" (0) Quit");
+            System.out.print("Enter your choice: ");;
+            choice = Integer.parseInt(menuInput.readLine());
+        } catch (NumberFormatException ex) {
+            System.err.println("Not a valid number");
+        } catch (IOException e) {
+            System.out.println("Failed to get input");
+        }
+    }
+    // first choice option:
+    if (choice == 1) {
+        //actions
+    }
+    // second choice option:
+    if (choice == 2) {
+        //actions
+    }
+    if (choice==3){
+        //actions
+    }
 }
+
