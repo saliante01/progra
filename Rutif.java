@@ -84,7 +84,6 @@ public class Rutif {
         }
     }
     while (choice != 0) {
-    /* Ask for player's choice */
     while(true) {
         try
         {
